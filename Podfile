@@ -11,4 +11,5 @@ target 'Fitness Challenge' do
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
   pod 'NoOptionalInterpolation'
+  pod 'SwiftKeychainWrapper'
 end

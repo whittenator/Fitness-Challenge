@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5671889F1E09E9A500A41A0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5671889E1E09E9A500A41A0B /* GoogleService-Info.plist */; };
+		567188A11E09FA3600A41A0B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567188A01E09FA3600A41A0B /* DataService.swift */; };
+		567188A31E09FF5D00A41A0B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567188A21E09FF5D00A41A0B /* UserCell.swift */; };
 		5697084B1E0624A500B54EDE /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697084A1E0624A500B54EDE /* VideoVC.swift */; };
 		56D5AB921E01BE8F00C51695 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D5AB911E01BE8F00C51695 /* MainVC.swift */; };
 		56D5AB991E04BD3600C51695 /* ChallengeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D5AB981E04BD3600C51695 /* ChallengeCell.swift */; };
@@ -29,6 +31,8 @@
 		5617D23BB5A2243B4D717DF4 /* Pods-Fitness Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitness Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fitness Challenge/Pods-Fitness Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		5671889D1E09E24A00A41A0B /* Fitness Challenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fitness Challenge.entitlements"; sourceTree = "<group>"; };
 		5671889E1E09E9A500A41A0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		567188A01E09FA3600A41A0B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		567188A21E09FF5D00A41A0B /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		5697084A1E0624A500B54EDE /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		56D5AB911E01BE8F00C51695 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		56D5AB981E04BD3600C51695 /* ChallengeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeCell.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				56D5AB981E04BD3600C51695 /* ChallengeCell.swift */,
+				567188A21E09FF5D00A41A0B /* UserCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				56FF2BFB1E08EDDB003825B2 /* AuthService.swift */,
+				567188A01E09FA3600A41A0B /* DataService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -285,6 +291,8 @@
 				56FF2BFC1E08EDDB003825B2 /* AuthService.swift in Sources */,
 				56EA6A2A1E00C05E00E9FE5D /* CreateProfileVC.swift in Sources */,
 				56EEDE191DFFCC89005CC896 /* AppDelegate.swift in Sources */,
+				567188A31E09FF5D00A41A0B /* UserCell.swift in Sources */,
+				567188A11E09FA3600A41A0B /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
