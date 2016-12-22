@@ -46,5 +46,11 @@
 	</dict>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>(human-readable reason for photo access)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>to take photos and video</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>to record live movies</string>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 </dict>
 </plist>

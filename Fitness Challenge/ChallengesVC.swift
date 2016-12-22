@@ -12,6 +12,11 @@ class ChallengesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func addVideo(_ sender: Any) {
+        
+        performSegue(withIdentifier: "goToCamera", sender: self)
+        
+    }
 
     var challenge = [Challenges]()
     

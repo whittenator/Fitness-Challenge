@@ -23,6 +23,9 @@
 		56EEDE231DFFCC89005CC896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EEDE211DFFCC89005CC896 /* LaunchScreen.storyboard */; };
 		56EEDE2B1E006FB7005CC896 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EEDE2A1E006FB7005CC896 /* SignUpVC.swift */; };
 		56F951AA1E0B7D6500FB9E1C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F951A91E0B7D6500FB9E1C /* User.swift */; };
+		56F951AC1E0B98DF00FB9E1C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F951AB1E0B98DF00FB9E1C /* CameraViewController.swift */; };
+		56F951AE1E0B98FC00FB9E1C /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F951AD1E0B98FC00FB9E1C /* PhotoCaptureDelegate.swift */; };
+		56F951B01E0B9ABA00FB9E1C /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F951AF1E0B9ABA00FB9E1C /* PreviewView.swift */; };
 		56FF2BFC1E08EDDB003825B2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FF2BFB1E08EDDB003825B2 /* AuthService.swift */; };
 		D775C80CE35623CC534C4925 /* Pods_Fitness_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246476E04D2130BFED28426E /* Pods_Fitness_Challenge.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +53,9 @@
 		56EEDE241DFFCC89005CC896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56EEDE2A1E006FB7005CC896 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		56F951A91E0B7D6500FB9E1C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		56F951AB1E0B98DF00FB9E1C /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		56F951AD1E0B98FC00FB9E1C /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
+		56F951AF1E0B9ABA00FB9E1C /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		56FF2BFB1E08EDDB003825B2 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +100,9 @@
 		56D5AB941E04BC9200C51695 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				56F951AD1E0B98FC00FB9E1C /* PhotoCaptureDelegate.swift */,
 				56D5AB9C1E04BF3E00C51695 /* Challenges.swift */,
+				56F951AF1E0B9ABA00FB9E1C /* PreviewView.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -102,6 +110,7 @@
 		56D5AB951E04BC9900C51695 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				56F951AB1E0B98DF00FB9E1C /* CameraViewController.swift */,
 				56EA6A291E00C05E00E9FE5D /* CreateProfileVC.swift */,
 				56EEDE2A1E006FB7005CC896 /* SignUpVC.swift */,
 				56D5AB911E01BE8F00C51695 /* MainVC.swift */,
@@ -291,14 +300,17 @@
 				56F951AA1E0B7D6500FB9E1C /* User.swift in Sources */,
 				56D5AB9D1E04BF3E00C51695 /* Challenges.swift in Sources */,
 				56D5AB9B1E04BEBC00C51695 /* ChallengesVC.swift in Sources */,
+				56F951AE1E0B98FC00FB9E1C /* PhotoCaptureDelegate.swift in Sources */,
 				5697084B1E0624A500B54EDE /* VideoVC.swift in Sources */,
 				56D5AB991E04BD3600C51695 /* ChallengeCell.swift in Sources */,
 				56D5AB921E01BE8F00C51695 /* MainVC.swift in Sources */,
 				56EEDE2B1E006FB7005CC896 /* SignUpVC.swift in Sources */,
 				56FF2BFC1E08EDDB003825B2 /* AuthService.swift in Sources */,
+				56F951B01E0B9ABA00FB9E1C /* PreviewView.swift in Sources */,
 				56EA6A2A1E00C05E00E9FE5D /* CreateProfileVC.swift in Sources */,
 				56EEDE191DFFCC89005CC896 /* AppDelegate.swift in Sources */,
 				567188A31E09FF5D00A41A0B /* UserCell.swift in Sources */,
+				56F951AC1E0B98DF00FB9E1C /* CameraViewController.swift in Sources */,
 				567188A11E09FA3600A41A0B /* DataService.swift in Sources */,
 				567188A71E0B586600A41A0B /* UsersVC.swift in Sources */,
 			);

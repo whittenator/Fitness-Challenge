@@ -25,6 +25,7 @@ class UsersVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         usersTV.allowsMultipleSelection = true
         
         DataService.instance.usersRef.observeSingleEvent(of: .value) { (snapshot: FIRDataSnapshot) in
+            //Parses through data in Firebase Database
             if let users = snapshot.value as? Dictionary<String, AnyObject> {
                 for (key, value) in users {
                     if let dict = value as? Dictionary<String, AnyObject> {

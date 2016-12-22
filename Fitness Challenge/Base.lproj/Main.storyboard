@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="w7Z-QJ-9m7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LeU-4M-kgE">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -270,31 +270,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UJ4-l4-wzw">
-                                <rect key="frame" x="0.0" y="106" width="414" height="581"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UJ4-l4-wzw">
+                                <rect key="frame" x="0.0" y="86" width="414" height="650"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChallengeCell" rowHeight="77" id="Ud8-al-JtP" customClass="ChallengeCell" customModule="Fitness_Challenge" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ud8-al-JtP" id="0bM-z5-gJu">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7kv-OB-WT6">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7kv-OB-WT6">
                                                     <rect key="frame" x="19" y="4" width="73" height="68"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="73" id="xhY-Gk-Nvu"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Video Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tz-VR-ka5">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tz-VR-ka5">
                                                     <rect key="frame" x="100" y="8" width="306" height="60"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1Tz-VR-ka5" firstAttribute="centerY" secondItem="7kv-OB-WT6" secondAttribute="centerY" id="1wa-cy-CTN"/>
+                                                <constraint firstItem="1Tz-VR-ka5" firstAttribute="trailing" secondItem="0bM-z5-gJu" secondAttribute="trailingMargin" id="Lzg-QK-u3b"/>
+                                                <constraint firstItem="1Tz-VR-ka5" firstAttribute="bottom" secondItem="0bM-z5-gJu" secondAttribute="bottomMargin" id="gME-Zn-QvZ"/>
+                                                <constraint firstItem="7kv-OB-WT6" firstAttribute="top" secondItem="0bM-z5-gJu" secondAttribute="topMargin" constant="-4" id="sLh-gk-Ull"/>
+                                                <constraint firstItem="7kv-OB-WT6" firstAttribute="leading" secondItem="0bM-z5-gJu" secondAttribute="leadingMargin" constant="11" id="uEv-oV-Op5"/>
+                                                <constraint firstItem="1Tz-VR-ka5" firstAttribute="top" secondItem="0bM-z5-gJu" secondAttribute="topMargin" id="y42-SG-957"/>
+                                                <constraint firstItem="1Tz-VR-ka5" firstAttribute="leading" secondItem="7kv-OB-WT6" secondAttribute="trailing" constant="8" symbolic="YES" id="zGA-II-IPU"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="videoPreviewImage" destination="7kv-OB-WT6" id="h31-EO-Yxr"/>
@@ -303,13 +312,34 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuL-OC-jAB">
+                                <rect key="frame" x="45" y="8" width="84" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Fjb-LP-zZR"/>
+                                    <constraint firstAttribute="width" constant="84" id="wl9-IZ-xG8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Add Video"/>
+                                <connections>
+                                    <action selector="addVideo:" destination="LeU-4M-kgE" eventType="touchUpInside" id="o2o-I4-Bfg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.01176470588" green="0.66274509800000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fuL-OC-jAB" firstAttribute="leading" secondItem="1Qa-0r-0Zn" secondAttribute="leadingMargin" constant="25" id="4ue-OO-P48"/>
+                            <constraint firstItem="UJ4-l4-wzw" firstAttribute="bottom" secondItem="sow-I8-XVI" secondAttribute="top" id="HLE-P9-Fyk"/>
+                            <constraint firstItem="fuL-OC-jAB" firstAttribute="top" secondItem="QlP-2A-uH9" secondAttribute="bottom" constant="8" symbolic="YES" id="rFz-ys-Djp"/>
+                            <constraint firstItem="UJ4-l4-wzw" firstAttribute="top" secondItem="fuL-OC-jAB" secondAttribute="bottom" constant="33" id="tE2-I5-KZC"/>
+                            <constraint firstAttribute="trailing" secondItem="UJ4-l4-wzw" secondAttribute="trailing" id="tcO-vC-kUU"/>
+                            <constraint firstItem="UJ4-l4-wzw" firstAttribute="leading" secondItem="1Qa-0r-0Zn" secondAttribute="leading" id="vMl-Xi-cXE"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Challenges" id="wkc-DN-R5h"/>
                     <connections>
                         <outlet property="tableView" destination="UJ4-l4-wzw" id="WAk-em-rCy"/>
                         <segue destination="v26-Cx-hBq" kind="show" identifier="VideoVC" id="ZHh-he-noh"/>
+                        <segue destination="aKS-PS-8Tb" kind="show" identifier="goToCamera" id="uvo-jr-w7M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozn-yr-Pyb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -570,8 +600,213 @@
             </objects>
             <point key="canvasLocation" x="1810" y="264"/>
         </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="Wjf-xb-HTh">
+            <objects>
+                <viewController id="aKS-PS-8Tb" customClass="CameraViewController" customModule="Fitness_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sXx-yk-pfS"/>
+                        <viewControllerLayoutGuide type="bottom" id="nUc-UJ-Maz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fjk-q9-dea">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DwT-z5-7VT" userLabel="Preview" customClass="PreviewView" customModule="Fitness_Challenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sei-xx-lxW">
+                                        <rect key="frame" x="26" y="8" width="46" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="&lt;Back">
+                                            <color key="titleColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backToChallenges:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="Xlb-mu-m3g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Gmo-JI-qdP" appends="YES" id="ZZn-t8-OFn"/>
+                                </connections>
+                            </view>
+                            <label hidden="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera Unavailable" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHr-Fp-gW2" userLabel="Camera Unavailable">
+                                <rect key="frame" x="100" y="353.66666666666669" width="214" height="29"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mu6-eP-EcM" userLabel="Resume">
+                                <rect key="frame" x="122" y="348.66666666666669" width="171" height="39"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                <state key="normal" title="Tap to resume">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resumeInterruptedSession:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="vOS-gE-32R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQR-28-NwV" userLabel="Record">
+                                <rect key="frame" x="67" y="686" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="toggleMovieRecording:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="WqR-V0-1XL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6I7-Hv-Ige" userLabel="Still">
+                                <rect key="frame" x="167" y="686" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2E1-RV-wy0"/>
+                                    <constraint firstAttribute="width" constant="80" id="cRj-Fo-faP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Photo">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="capturePhoto:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="Khf-45-Fgi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fQ-MP-zqf" userLabel="Camera">
+                                <rect key="frame" x="267" y="686" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Camera">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeCamera:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="v49-J5-7Xo"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kTl-4m-Qfs">
+                                <rect key="frame" x="156" y="638" width="103" height="29"/>
+                                <segments>
+                                    <segment title="Photo"/>
+                                    <segment title="Movie"/>
+                                </segments>
+                                <connections>
+                                    <action selector="toggleCaptureMode:" destination="aKS-PS-8Tb" eventType="valueChanged" id="tdN-Q2-fFE"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tR7-fY-AP1">
+                                <rect key="frame" x="107" y="8" width="200" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ASK-eq-wcG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Live Photo Mode: On"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="toggleLivePhotoMode:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="QTF-qM-4nW"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7s-ag-ISl">
+                                <rect key="frame" x="187" y="52" width="40" height="25"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="OZ2-S0-ICG"/>
+                                    <constraint firstAttribute="width" constant="40" id="Tcf-OQ-b8D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="width" secondItem="GQR-28-NwV" secondAttribute="width" id="1gs-w0-jdQ"/>
+                            <constraint firstItem="nUc-UJ-Maz" firstAttribute="top" secondItem="6I7-Hv-Ige" secondAttribute="bottom" constant="20" id="5oI-Ut-iL9"/>
+                            <constraint firstAttribute="centerX" secondItem="6I7-Hv-Ige" secondAttribute="centerX" id="9ka-2B-AFd"/>
+                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="leading" secondItem="GQR-28-NwV" secondAttribute="trailing" constant="20" id="9sQ-V3-vDw"/>
+                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="height" secondItem="GQR-28-NwV" secondAttribute="height" id="AA2-NT-V9e"/>
+                            <constraint firstItem="DwT-z5-7VT" firstAttribute="height" secondItem="fjk-q9-dea" secondAttribute="height" id="D17-tN-X1E"/>
+                            <constraint firstItem="Mu6-eP-EcM" firstAttribute="centerY" secondItem="fjk-q9-dea" secondAttribute="centerY" id="ELO-nX-vX8"/>
+                            <constraint firstItem="DwT-z5-7VT" firstAttribute="centerY" secondItem="fjk-q9-dea" secondAttribute="centerY" id="SDK-KA-DTU"/>
+                            <constraint firstItem="DwT-z5-7VT" firstAttribute="width" secondItem="fjk-q9-dea" secondAttribute="width" id="VGh-9f-VlO"/>
+                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="top" secondItem="8fQ-MP-zqf" secondAttribute="top" id="Ya5-dm-XpS"/>
+                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="width" secondItem="8fQ-MP-zqf" secondAttribute="width" id="aF3-z6-HRo"/>
+                            <constraint firstItem="kTl-4m-Qfs" firstAttribute="centerX" secondItem="fjk-q9-dea" secondAttribute="centerX" id="com-u3-8S5"/>
+                            <constraint firstItem="8fQ-MP-zqf" firstAttribute="leading" secondItem="6I7-Hv-Ige" secondAttribute="trailing" constant="20" id="d3p-ss-Evd"/>
+                            <constraint firstItem="NHr-Fp-gW2" firstAttribute="centerX" secondItem="fjk-q9-dea" secondAttribute="centerX" id="esN-F4-rf2"/>
+                            <constraint firstItem="I7s-ag-ISl" firstAttribute="centerX" secondItem="fjk-q9-dea" secondAttribute="centerX" id="lmo-PK-VLA"/>
+                            <constraint firstItem="tR7-fY-AP1" firstAttribute="centerX" secondItem="fjk-q9-dea" secondAttribute="centerX" id="oIV-J2-U0L"/>
+                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="height" secondItem="8fQ-MP-zqf" secondAttribute="height" id="oXm-Jj-hJc"/>
+                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="top" secondItem="kTl-4m-Qfs" secondAttribute="bottom" constant="20" id="r1W-zo-Lr8"/>
+                            <constraint firstItem="Mu6-eP-EcM" firstAttribute="centerX" secondItem="fjk-q9-dea" secondAttribute="centerX" id="w7x-ee-csX"/>
+                            <constraint firstItem="I7s-ag-ISl" firstAttribute="top" secondItem="tR7-fY-AP1" secondAttribute="bottom" constant="8" id="wKH-OP-Gee"/>
+                            <constraint firstItem="NHr-Fp-gW2" firstAttribute="centerY" secondItem="fjk-q9-dea" secondAttribute="centerY" id="wgb-i0-GwZ"/>
+                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="top" secondItem="GQR-28-NwV" secondAttribute="top" id="xRk-QX-2kW"/>
+                            <constraint firstItem="DwT-z5-7VT" firstAttribute="centerX" secondItem="fjk-q9-dea" secondAttribute="centerX" id="xSN-jJ-fC4"/>
+                            <constraint firstItem="tR7-fY-AP1" firstAttribute="top" secondItem="sXx-yk-pfS" secondAttribute="bottom" constant="8" id="zPa-eO-s8R"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="8fQ-MP-zqf" id="q9w-WZ-Yec"/>
+                        <outlet property="cameraUnavailableLabel" destination="NHr-Fp-gW2" id="lfs-N2-F5H"/>
+                        <outlet property="captureModeControl" destination="kTl-4m-Qfs" id="nlL-Tg-RCn"/>
+                        <outlet property="capturingLivePhotoLabel" destination="I7s-ag-ISl" id="ufX-PO-b9r"/>
+                        <outlet property="livePhotoModeButton" destination="tR7-fY-AP1" id="8w5-N1-0pR"/>
+                        <outlet property="photoButton" destination="6I7-Hv-Ige" id="CIx-MO-aoI"/>
+                        <outlet property="previewView" destination="DwT-z5-7VT" id="lbb-mU-jb2"/>
+                        <outlet property="recordButton" destination="GQR-28-NwV" id="zd4-EV-Cyv"/>
+                        <outlet property="resumeButton" destination="Mu6-eP-EcM" id="nHD-25-vUJ"/>
+                        <segue destination="LeU-4M-kgE" kind="show" identifier="backToChallenge" id="die-T6-Ln7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZwL-SB-gQ9" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Gmo-JI-qdP">
+                    <connections>
+                        <action selector="focusAndExposeTap:" destination="aKS-PS-8Tb" id="8dA-rZ-Ufr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2205.7971014492755" y="1067.9347826086957"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ZT8-qA-Z1B"/>
+        <segue reference="die-T6-Ln7"/>
     </inferredMetricsTieBreakers>
 </document>

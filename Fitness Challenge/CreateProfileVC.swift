@@ -47,12 +47,13 @@ class CreateProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Allows the TextFields to be deselected
         genderTF.delegate = self
         userNameTF.delegate = self
         weightTF.delegate = self
         heightTF.delegate = self
         ageTF.delegate = self
-
+        //Dismisses Keyboard
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(CreateProfileVC.dismissKeyboard)))
         
     }
