@@ -279,7 +279,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ud8-al-JtP" id="0bM-z5-gJu">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7kv-OB-WT6">
@@ -403,7 +403,7 @@
         <!--MainHome-->
         <scene sceneID="DJi-DS-6MZ">
             <objects>
-                <viewController title="MainHome" id="yUH-Fp-Q3X" sceneMemberID="viewController">
+                <viewController title="MainHome" id="yUH-Fp-Q3X" customClass="MainVC" customModule="Fitness_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CAF-j7-wr9"/>
                         <viewControllerLayoutGuide type="bottom" id="aIr-5n-Tid"/>
@@ -453,7 +453,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="67"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yd1-dk-ju3" id="57l-eT-0yJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -481,10 +481,10 @@
             </objects>
             <point key="canvasLocation" x="2856.521739130435" y="-448.36956521739131"/>
         </scene>
-        <!--View Controller-->
+        <!--UsersVC-->
         <scene sceneID="lQh-aK-5YA">
             <objects>
-                <viewController id="w7Z-QJ-9m7" sceneMemberID="viewController">
+                <viewController id="w7Z-QJ-9m7" customClass="UsersVC" customModule="Fitness_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0uK-vl-Nag"/>
                         <viewControllerLayoutGuide type="bottom" id="Pgs-Om-nO7"/>
@@ -492,12 +492,64 @@
                     <view key="view" contentMode="scaleToFill" id="Cwe-rC-cyR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="46e-Pb-KKM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="62" id="9Qw-a0-12q" customClass="UserCell" customModule="Fitness_Challenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Qw-a0-12q" id="rqk-gu-mBb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travisjw25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eym-8H-rC8">
+                                                    <rect key="frame" x="23" y="6" width="244" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="244" id="GsF-Wg-LEI"/>
+                                                        <constraint firstAttribute="height" constant="50" id="L4d-xm-qbA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eym-8H-rC8" firstAttribute="leading" secondItem="rqk-gu-mBb" secondAttribute="leadingMargin" constant="15" id="TOI-XX-HVL"/>
+                                                <constraint firstItem="eym-8H-rC8" firstAttribute="centerY" secondItem="rqk-gu-mBb" secondAttribute="centerY" id="Vss-hV-58V"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="firstNameLbl" destination="eym-8H-rC8" id="Bq8-fv-7ii"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="j8W-gD-6VL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="barTintColor" red="0.01176470588" green="0.66274509800000003" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pgs-Om-nO7" firstAttribute="top" secondItem="46e-Pb-KKM" secondAttribute="bottom" id="MRu-0t-aFe"/>
+                            <constraint firstItem="j8W-gD-6VL" firstAttribute="leading" secondItem="Cwe-rC-cyR" secondAttribute="leading" id="NMS-6V-z1q"/>
+                            <constraint firstAttribute="trailing" secondItem="j8W-gD-6VL" secondAttribute="trailing" id="OtY-xT-c4K"/>
+                            <constraint firstAttribute="trailing" secondItem="46e-Pb-KKM" secondAttribute="trailing" id="Qz0-1a-3wn"/>
+                            <constraint firstItem="46e-Pb-KKM" firstAttribute="top" secondItem="j8W-gD-6VL" secondAttribute="bottom" id="R5s-SI-wiV"/>
+                            <constraint firstItem="j8W-gD-6VL" firstAttribute="top" secondItem="Cwe-rC-cyR" secondAttribute="top" id="RbW-mq-78K"/>
+                            <constraint firstItem="46e-Pb-KKM" firstAttribute="leading" secondItem="Cwe-rC-cyR" secondAttribute="leading" id="uN8-bb-W5J"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="usersTV" destination="46e-Pb-KKM" id="Txv-r4-mXY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIR-om-Qdz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3685" y="-443"/>
+            <point key="canvasLocation" x="3684.057971014493" y="-443.47826086956525"/>
         </scene>
         <!--Main-->
         <scene sceneID="p8o-uP-ycc">

@@ -10,6 +10,7 @@
 		5671889F1E09E9A500A41A0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5671889E1E09E9A500A41A0B /* GoogleService-Info.plist */; };
 		567188A11E09FA3600A41A0B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567188A01E09FA3600A41A0B /* DataService.swift */; };
 		567188A31E09FF5D00A41A0B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567188A21E09FF5D00A41A0B /* UserCell.swift */; };
+		567188A71E0B586600A41A0B /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567188A61E0B586600A41A0B /* UsersVC.swift */; };
 		5697084B1E0624A500B54EDE /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697084A1E0624A500B54EDE /* VideoVC.swift */; };
 		56D5AB921E01BE8F00C51695 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D5AB911E01BE8F00C51695 /* MainVC.swift */; };
 		56D5AB991E04BD3600C51695 /* ChallengeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D5AB981E04BD3600C51695 /* ChallengeCell.swift */; };
@@ -21,6 +22,7 @@
 		56EEDE201DFFCC89005CC896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56EEDE1F1DFFCC89005CC896 /* Assets.xcassets */; };
 		56EEDE231DFFCC89005CC896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EEDE211DFFCC89005CC896 /* LaunchScreen.storyboard */; };
 		56EEDE2B1E006FB7005CC896 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EEDE2A1E006FB7005CC896 /* SignUpVC.swift */; };
+		56F951AA1E0B7D6500FB9E1C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F951A91E0B7D6500FB9E1C /* User.swift */; };
 		56FF2BFC1E08EDDB003825B2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FF2BFB1E08EDDB003825B2 /* AuthService.swift */; };
 		D775C80CE35623CC534C4925 /* Pods_Fitness_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246476E04D2130BFED28426E /* Pods_Fitness_Challenge.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +35,7 @@
 		5671889E1E09E9A500A41A0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		567188A01E09FA3600A41A0B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		567188A21E09FF5D00A41A0B /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		567188A61E0B586600A41A0B /* UsersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		5697084A1E0624A500B54EDE /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		56D5AB911E01BE8F00C51695 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		56D5AB981E04BD3600C51695 /* ChallengeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeCell.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		56EEDE221DFFCC89005CC896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56EEDE241DFFCC89005CC896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56EEDE2A1E006FB7005CC896 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		56F951A91E0B7D6500FB9E1C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		56FF2BFB1E08EDDB003825B2 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +107,7 @@
 				56D5AB911E01BE8F00C51695 /* MainVC.swift */,
 				56D5AB9A1E04BEBC00C51695 /* ChallengesVC.swift */,
 				5697084A1E0624A500B54EDE /* VideoVC.swift */,
+				567188A61E0B586600A41A0B /* UsersVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 				56EEDE211DFFCC89005CC896 /* LaunchScreen.storyboard */,
 				5671889E1E09E9A500A41A0B /* GoogleService-Info.plist */,
 				56EEDE241DFFCC89005CC896 /* Info.plist */,
+				56F951A91E0B7D6500FB9E1C /* User.swift */,
 			);
 			path = "Fitness Challenge";
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F951AA1E0B7D6500FB9E1C /* User.swift in Sources */,
 				56D5AB9D1E04BF3E00C51695 /* Challenges.swift in Sources */,
 				56D5AB9B1E04BEBC00C51695 /* ChallengesVC.swift in Sources */,
 				5697084B1E0624A500B54EDE /* VideoVC.swift in Sources */,
@@ -293,6 +300,7 @@
 				56EEDE191DFFCC89005CC896 /* AppDelegate.swift in Sources */,
 				567188A31E09FF5D00A41A0B /* UserCell.swift in Sources */,
 				567188A11E09FA3600A41A0B /* DataService.swift in Sources */,
+				567188A71E0B586600A41A0B /* UsersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5617D23BB5A2243B4D717DF4 /* Pods-Fitness Challenge.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2PZ6TY2596;
 				INFOPLIST_FILE = "Fitness Challenge/Info.plist";
@@ -432,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C3FB95F61D1D547395AF9FD /* Pods-Fitness Challenge.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2PZ6TY2596;
 				INFOPLIST_FILE = "Fitness Challenge/Info.plist";
