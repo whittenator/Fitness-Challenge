@@ -11,13 +11,13 @@ import SwiftKeychainWrapper
 
 class CreateProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate{
     
-    var list = ["Male", "Female"]
+    
     
     
     @IBOutlet var userNameTF: UITextField!
     
     @IBOutlet var genderTF: UITextField!
-    @IBOutlet var genderPicker: UIPickerView!
+    
     @IBOutlet weak var weightTF: UITextField!
     @IBOutlet weak var ageTF: UITextField!
     @IBOutlet weak var heightTF: UITextField!
