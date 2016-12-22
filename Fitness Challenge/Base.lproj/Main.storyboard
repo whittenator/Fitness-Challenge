@@ -626,22 +626,91 @@
                                             <action selector="backToChallenges:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="Xlb-mu-m3g"/>
                                         </connections>
                                     </button>
+                                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6I7-Hv-Ige" userLabel="Still">
+                                        <rect key="frame" x="334" y="688" width="80" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="2E1-RV-wy0"/>
+                                            <constraint firstAttribute="width" constant="80" id="cRj-Fo-faP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Photo">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="capturePhoto:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="Khf-45-Fgi"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fQ-MP-zqf" userLabel="Camera">
+                                        <rect key="frame" x="265" y="688" width="80" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Camera">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeCamera:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="v49-J5-7Xo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQR-28-NwV" userLabel="Record">
+                                        <rect key="frame" x="167" y="688" width="80" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="P3R-je-czc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Record">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="toggleMovieRecording:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="WqR-V0-1XL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="6I7-Hv-Ige" secondAttribute="centerX" constant="-167" id="72U-nB-Apu"/>
+                                    <constraint firstItem="GQR-28-NwV" firstAttribute="baseline" secondItem="6I7-Hv-Ige" secondAttribute="firstBaseline" id="C5Y-di-Isf"/>
+                                    <constraint firstItem="GQR-28-NwV" firstAttribute="baseline" secondItem="6I7-Hv-Ige" secondAttribute="baseline" id="FbV-at-bNH"/>
+                                    <constraint firstAttribute="bottom" secondItem="GQR-28-NwV" secondAttribute="bottom" constant="18" id="NCG-Be-kSV"/>
+                                    <constraint firstItem="8fQ-MP-zqf" firstAttribute="leading" secondItem="GQR-28-NwV" secondAttribute="trailing" constant="18" id="U5v-BQ-vzu"/>
+                                    <constraint firstItem="GQR-28-NwV" firstAttribute="top" secondItem="6I7-Hv-Ige" secondAttribute="top" id="ZH2-X0-bqR"/>
+                                    <constraint firstItem="8fQ-MP-zqf" firstAttribute="baseline" secondItem="GQR-28-NwV" secondAttribute="firstBaseline" id="cWy-t7-IBn"/>
+                                    <constraint firstItem="8fQ-MP-zqf" firstAttribute="baseline" secondItem="6I7-Hv-Ige" secondAttribute="baseline" id="fd7-cL-SPU"/>
+                                    <constraint firstItem="8fQ-MP-zqf" firstAttribute="top" secondItem="6I7-Hv-Ige" secondAttribute="top" id="hxX-ib-3eT"/>
+                                    <constraint firstItem="8fQ-MP-zqf" firstAttribute="firstBaseline" secondItem="6I7-Hv-Ige" secondAttribute="baseline" id="isr-C3-GoK"/>
+                                    <constraint firstAttribute="trailing" secondItem="8fQ-MP-zqf" secondAttribute="trailing" constant="69" id="koR-Ns-6E8"/>
+                                    <constraint firstItem="GQR-28-NwV" firstAttribute="centerX" secondItem="DwT-z5-7VT" secondAttribute="centerX" id="mZ0-Qf-iml"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Gmo-JI-qdP" appends="YES" id="ZZn-t8-OFn"/>
                                 </connections>
                             </view>
                             <label hidden="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera Unavailable" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHr-Fp-gW2" userLabel="Camera Unavailable">
-                                <rect key="frame" x="100" y="353.66666666666669" width="214" height="29"/>
+                                <rect key="frame" x="100" y="354" width="214" height="29"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mu6-eP-EcM" userLabel="Resume">
-                                <rect key="frame" x="122" y="348.66666666666669" width="171" height="39"/>
+                                <rect key="frame" x="122" y="349" width="171" height="39"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
@@ -657,58 +726,6 @@
                                     <action selector="resumeInterruptedSession:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="vOS-gE-32R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQR-28-NwV" userLabel="Record">
-                                <rect key="frame" x="67" y="686" width="80" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Record">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="toggleMovieRecording:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="WqR-V0-1XL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6I7-Hv-Ige" userLabel="Still">
-                                <rect key="frame" x="167" y="686" width="80" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="2E1-RV-wy0"/>
-                                    <constraint firstAttribute="width" constant="80" id="cRj-Fo-faP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Photo">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="capturePhoto:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="Khf-45-Fgi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fQ-MP-zqf" userLabel="Camera">
-                                <rect key="frame" x="267" y="686" width="80" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Camera">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="changeCamera:" destination="aKS-PS-8Tb" eventType="touchUpInside" id="v49-J5-7Xo"/>
-                                </connections>
-                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kTl-4m-Qfs">
                                 <rect key="frame" x="156" y="638" width="103" height="29"/>
                                 <segments>
@@ -719,7 +736,7 @@
                                     <action selector="toggleCaptureMode:" destination="aKS-PS-8Tb" eventType="valueChanged" id="tdN-Q2-fFE"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tR7-fY-AP1">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tR7-fY-AP1">
                                 <rect key="frame" x="107" y="8" width="200" height="36"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -755,29 +772,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="width" secondItem="GQR-28-NwV" secondAttribute="width" id="1gs-w0-jdQ"/>
-                            <constraint firstItem="nUc-UJ-Maz" firstAttribute="top" secondItem="6I7-Hv-Ige" secondAttribute="bottom" constant="20" id="5oI-Ut-iL9"/>
-                            <constraint firstAttribute="centerX" secondItem="6I7-Hv-Ige" secondAttribute="centerX" id="9ka-2B-AFd"/>
-                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="leading" secondItem="GQR-28-NwV" secondAttribute="trailing" constant="20" id="9sQ-V3-vDw"/>
-                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="height" secondItem="GQR-28-NwV" secondAttribute="height" id="AA2-NT-V9e"/>
                             <constraint firstItem="DwT-z5-7VT" firstAttribute="height" secondItem="fjk-q9-dea" secondAttribute="height" id="D17-tN-X1E"/>
                             <constraint firstItem="Mu6-eP-EcM" firstAttribute="centerY" secondItem="fjk-q9-dea" secondAttribute="centerY" id="ELO-nX-vX8"/>
                             <constraint firstItem="DwT-z5-7VT" firstAttribute="centerY" secondItem="fjk-q9-dea" secondAttribute="centerY" id="SDK-KA-DTU"/>
                             <constraint firstItem="DwT-z5-7VT" firstAttribute="width" secondItem="fjk-q9-dea" secondAttribute="width" id="VGh-9f-VlO"/>
-                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="top" secondItem="8fQ-MP-zqf" secondAttribute="top" id="Ya5-dm-XpS"/>
-                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="width" secondItem="8fQ-MP-zqf" secondAttribute="width" id="aF3-z6-HRo"/>
                             <constraint firstItem="kTl-4m-Qfs" firstAttribute="centerX" secondItem="fjk-q9-dea" secondAttribute="centerX" id="com-u3-8S5"/>
-                            <constraint firstItem="8fQ-MP-zqf" firstAttribute="leading" secondItem="6I7-Hv-Ige" secondAttribute="trailing" constant="20" id="d3p-ss-Evd"/>
                             <constraint firstItem="NHr-Fp-gW2" firstAttribute="centerX" secondItem="fjk-q9-dea" secondAttribute="centerX" id="esN-F4-rf2"/>
                             <constraint firstItem="I7s-ag-ISl" firstAttribute="centerX" secondItem="fjk-q9-dea" secondAttribute="centerX" id="lmo-PK-VLA"/>
                             <constraint firstItem="tR7-fY-AP1" firstAttribute="centerX" secondItem="fjk-q9-dea" secondAttribute="centerX" id="oIV-J2-U0L"/>
-                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="height" secondItem="8fQ-MP-zqf" secondAttribute="height" id="oXm-Jj-hJc"/>
-                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="top" secondItem="kTl-4m-Qfs" secondAttribute="bottom" constant="20" id="r1W-zo-Lr8"/>
                             <constraint firstItem="Mu6-eP-EcM" firstAttribute="centerX" secondItem="fjk-q9-dea" secondAttribute="centerX" id="w7x-ee-csX"/>
                             <constraint firstItem="I7s-ag-ISl" firstAttribute="top" secondItem="tR7-fY-AP1" secondAttribute="bottom" constant="8" id="wKH-OP-Gee"/>
                             <constraint firstItem="NHr-Fp-gW2" firstAttribute="centerY" secondItem="fjk-q9-dea" secondAttribute="centerY" id="wgb-i0-GwZ"/>
-                            <constraint firstItem="6I7-Hv-Ige" firstAttribute="top" secondItem="GQR-28-NwV" secondAttribute="top" id="xRk-QX-2kW"/>
                             <constraint firstItem="DwT-z5-7VT" firstAttribute="centerX" secondItem="fjk-q9-dea" secondAttribute="centerX" id="xSN-jJ-fC4"/>
+                            <constraint firstItem="nUc-UJ-Maz" firstAttribute="top" secondItem="kTl-4m-Qfs" secondAttribute="bottom" constant="70" id="yvh-ue-pEJ"/>
                             <constraint firstItem="tR7-fY-AP1" firstAttribute="top" secondItem="sXx-yk-pfS" secondAttribute="bottom" constant="8" id="zPa-eO-s8R"/>
                         </constraints>
                     </view>
